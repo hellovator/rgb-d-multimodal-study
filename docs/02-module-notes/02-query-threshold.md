@@ -34,10 +34,10 @@ self.backend.threshold()
 
 ### 第二步：相似度与距离转换（对数学公式的表示）
 
-\begin{align}
-\text{余弦相似度：}\quad & s = \cos\theta \\
-\text{余弦距离：}\quad & d = 1 - s
-\end{align}
+余弦相似度：
+$$s = \cos\theta$$
+余弦距离：
+$$d = 1 - s$$
 
 代码：
 
