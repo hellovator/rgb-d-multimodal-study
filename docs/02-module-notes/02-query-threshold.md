@@ -36,6 +36,7 @@ self.backend.threshold()
 
 余弦相似度：
 $$s = \cos\theta$$
+
 余弦距离：
 $$d = 1 - s$$
 
