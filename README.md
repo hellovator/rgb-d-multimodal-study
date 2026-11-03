@@ -1,8 +1,6 @@
 # rgb-d-multimodal-study
 RGB-D multimodal segmentation study (DFormer + SemHash)
 
-# RGB-D 多模态研究
-
 ## 1. 项目简介
 
 本项目主要围绕多模态学习、语义去重及相关深度学习技术开展学习与实验研究。
