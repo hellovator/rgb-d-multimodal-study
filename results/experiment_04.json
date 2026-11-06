@@ -1,0 +1,48 @@
+{
+    "experiment": "实验四：双阈值语义去重",
+    "date": "2026-11-05 15:54:24",
+    "low_threshold": 0.65,
+    "high_threshold": 0.85,
+    "original_count": 10,
+    "automatic_filtered_count": 2,
+    "manual_review_count": 3,
+    "kept_count": 8,
+    "true_positive": 2,
+    "false_positive": 0,
+    "false_negative": 2,
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1_score": 0.6666666666666666,
+    "details": [
+        {
+            "record": "The cat is sleeping on the sofa.",
+            "duplicate_of": "The cat is sleeping on the sofa.",
+            "score": 1.0,
+            "decision": "自动过滤"
+        },
+        {
+            "record": "A cat is taking a nap on the couch.",
+            "duplicate_of": "The cat is sleeping on the sofa.",
+            "score": 0.7001579999923706,
+            "decision": "人工复核"
+        },
+        {
+            "record": "It is a beautiful sunny day.",
+            "duplicate_of": "The weather is sunny today.",
+            "score": 0.7737253904342651,
+            "decision": "人工复核"
+        },
+        {
+            "record": "Python is widely used for software development.",
+            "duplicate_of": "Python is a popular programming language.",
+            "score": 0.7354713678359985,
+            "decision": "人工复核"
+        },
+        {
+            "record": "I enjoy eating apples.",
+            "duplicate_of": "I like eating apples.",
+            "score": 0.9178879261016846,
+            "decision": "自动过滤"
+        }
+    ]
+}

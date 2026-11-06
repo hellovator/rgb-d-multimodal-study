@@ -1,0 +1,21 @@
+﻿threshold,record,duplicate_of,score
+0.5,The cat is sleeping on the sofa.,The cat is sleeping on the sofa.,1.0
+0.5,A cat is taking a nap on the couch.,The cat is sleeping on the sofa.,0.7001579999923706
+0.5,It is a beautiful sunny day.,The weather is sunny today.,0.7737253904342651
+0.5,Python is widely used for software development.,Python is a popular programming language.,0.7354713678359985
+0.5,I enjoy eating apples.,I like eating apples.,0.9178879261016846
+0.6,The cat is sleeping on the sofa.,The cat is sleeping on the sofa.,1.0
+0.6,A cat is taking a nap on the couch.,The cat is sleeping on the sofa.,0.7001579999923706
+0.6,It is a beautiful sunny day.,The weather is sunny today.,0.7737253904342651
+0.6,Python is widely used for software development.,Python is a popular programming language.,0.7354713678359985
+0.6,I enjoy eating apples.,I like eating apples.,0.9178879261016846
+0.7,The cat is sleeping on the sofa.,The cat is sleeping on the sofa.,1.0
+0.7,A cat is taking a nap on the couch.,The cat is sleeping on the sofa.,0.7001579999923706
+0.7,It is a beautiful sunny day.,The weather is sunny today.,0.7737253904342651
+0.7,Python is widely used for software development.,Python is a popular programming language.,0.7354713678359985
+0.7,I enjoy eating apples.,I like eating apples.,0.9178879261016846
+0.8,The cat is sleeping on the sofa.,The cat is sleeping on the sofa.,1.0
+0.8,I enjoy eating apples.,I like eating apples.,0.9178879261016846
+0.9,The cat is sleeping on the sofa.,The cat is sleeping on the sofa.,1.0
+0.9,I enjoy eating apples.,I like eating apples.,0.9178879261016846
+0.95,The cat is sleeping on the sofa.,The cat is sleeping on the sofa.,1.0

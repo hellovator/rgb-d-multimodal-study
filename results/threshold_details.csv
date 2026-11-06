@@ -1,0 +1,22 @@
+﻿threshold,record,exact,duplicate_of,score
+0.5,The cat is sleeping on the sofa.,True,The cat is sleeping on the sofa.,1.0
+0.5,The cat is sleeping on the sofa!,False,The cat is sleeping on the sofa.,0.9995365142822266
+0.5,A cat is taking a nap on the couch.,False,The cat is sleeping on the sofa.,0.7001579999923706
+0.5,It is a beautiful sunny day.,False,The weather is sunny today.,0.7737253904342651
+0.5,Python is widely used for software development.,False,Python is a popular programming language.,0.7354713678359985
+0.6,The cat is sleeping on the sofa.,True,The cat is sleeping on the sofa.,1.0
+0.6,The cat is sleeping on the sofa!,False,The cat is sleeping on the sofa.,0.9995365142822266
+0.6,A cat is taking a nap on the couch.,False,The cat is sleeping on the sofa.,0.7001579999923706
+0.6,It is a beautiful sunny day.,False,The weather is sunny today.,0.7737253904342651
+0.6,Python is widely used for software development.,False,Python is a popular programming language.,0.7354713678359985
+0.7,The cat is sleeping on the sofa.,True,The cat is sleeping on the sofa.,1.0
+0.7,The cat is sleeping on the sofa!,False,The cat is sleeping on the sofa.,0.9995365142822266
+0.7,A cat is taking a nap on the couch.,False,The cat is sleeping on the sofa.,0.7001579999923706
+0.7,It is a beautiful sunny day.,False,The weather is sunny today.,0.7737253904342651
+0.7,Python is widely used for software development.,False,Python is a popular programming language.,0.7354713678359985
+0.8,The cat is sleeping on the sofa.,True,The cat is sleeping on the sofa.,1.0
+0.8,The cat is sleeping on the sofa!,False,The cat is sleeping on the sofa.,0.9995365142822266
+0.9,The cat is sleeping on the sofa.,True,The cat is sleeping on the sofa.,1.0
+0.9,The cat is sleeping on the sofa!,False,The cat is sleeping on the sofa.,0.9995365142822266
+0.95,The cat is sleeping on the sofa.,True,The cat is sleeping on the sofa.,1.0
+0.95,The cat is sleeping on the sofa!,False,The cat is sleeping on the sofa.,0.9995365142822266
