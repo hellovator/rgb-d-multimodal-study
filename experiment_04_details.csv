@@ -1,6 +1,0 @@
-﻿record,duplicate_of,score,decision
-The cat is sleeping on the sofa.,The cat is sleeping on the sofa.,1.0,自动过滤
-A cat is taking a nap on the couch.,The cat is sleeping on the sofa.,0.7001579999923706,人工复核
-It is a beautiful sunny day.,The weather is sunny today.,0.7737253904342651,人工复核
-Python is widely used for software development.,Python is a popular programming language.,0.7354713678359985,人工复核
-I enjoy eating apples.,I like eating apples.,0.9178879261016846,自动过滤
