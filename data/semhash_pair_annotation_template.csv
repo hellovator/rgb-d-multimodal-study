@@ -1,0 +1,4 @@
+﻿pair_id,text_a,text_b,gold_label,annotator,notes
+1,"示例：SemHash 使用语义相似度识别重复文本。","示例：SemHash 通过语义相似性检测重复内容。",1,,
+2,"示例：今天北京天气晴朗。","示例：明天上海可能下雨。",0,,
+3,"","","uncertain",,
