@@ -1,0 +1,32 @@
+﻿threshold,record,duplicate_of,score,exact
+0.68,The cat is sleeping on the sofa.,The cat is sleeping on the sofa.,1.0,True
+0.68,A cat is taking a nap on the couch.,The cat is sleeping on the sofa.,0.7001579999923706,False
+0.68,It is a beautiful sunny day.,The weather is sunny today.,0.7737253904342651,False
+0.68,Python is widely used for software development.,Python is a popular programming language.,0.7354713678359985,False
+0.68,I enjoy eating apples.,I like eating apples.,0.9178879261016846,False
+0.7,The cat is sleeping on the sofa.,The cat is sleeping on the sofa.,1.0,True
+0.7,A cat is taking a nap on the couch.,The cat is sleeping on the sofa.,0.7001579999923706,False
+0.7,It is a beautiful sunny day.,The weather is sunny today.,0.7737253904342651,False
+0.7,Python is widely used for software development.,Python is a popular programming language.,0.7354713678359985,False
+0.7,I enjoy eating apples.,I like eating apples.,0.9178879261016846,False
+0.72,The cat is sleeping on the sofa.,The cat is sleeping on the sofa.,1.0,True
+0.72,It is a beautiful sunny day.,The weather is sunny today.,0.7737253904342651,False
+0.72,Python is widely used for software development.,Python is a popular programming language.,0.7354713678359985,False
+0.72,I enjoy eating apples.,I like eating apples.,0.9178879261016846,False
+0.74,The cat is sleeping on the sofa.,The cat is sleeping on the sofa.,1.0,True
+0.74,It is a beautiful sunny day.,The weather is sunny today.,0.7737253904342651,False
+0.74,I enjoy eating apples.,I like eating apples.,0.9178879261016846,False
+0.75,The cat is sleeping on the sofa.,The cat is sleeping on the sofa.,1.0,True
+0.75,It is a beautiful sunny day.,The weather is sunny today.,0.7737253904342651,False
+0.75,I enjoy eating apples.,I like eating apples.,0.9178879261016846,False
+0.76,The cat is sleeping on the sofa.,The cat is sleeping on the sofa.,1.0,True
+0.76,It is a beautiful sunny day.,The weather is sunny today.,0.7737253904342651,False
+0.76,I enjoy eating apples.,I like eating apples.,0.9178879261016846,False
+0.78,The cat is sleeping on the sofa.,The cat is sleeping on the sofa.,1.0,True
+0.78,I enjoy eating apples.,I like eating apples.,0.9178879261016846,False
+0.8,The cat is sleeping on the sofa.,The cat is sleeping on the sofa.,1.0,True
+0.8,I enjoy eating apples.,I like eating apples.,0.9178879261016846,False
+0.82,The cat is sleeping on the sofa.,The cat is sleeping on the sofa.,1.0,True
+0.82,I enjoy eating apples.,I like eating apples.,0.9178879261016846,False
+0.84,The cat is sleeping on the sofa.,The cat is sleeping on the sofa.,1.0,True
+0.84,I enjoy eating apples.,I like eating apples.,0.9178879261016846,False

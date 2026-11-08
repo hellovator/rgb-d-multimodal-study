@@ -1,0 +1,158 @@
+{
+    "experiment": "Experiment 05",
+    "date": "2026-11-08 22:31:58",
+    "description": "Fine-grained threshold analysis",
+    "note": "Exploratory results on the same 10-text pilot dataset as Experiment 03.",
+    "thresholds": [
+        0.68,
+        0.7,
+        0.72,
+        0.74,
+        0.75,
+        0.76,
+        0.78,
+        0.8,
+        0.82,
+        0.84
+    ],
+    "texts": [
+        "The cat is sleeping on the sofa.",
+        "The cat is sleeping on the sofa.",
+        "A cat is taking a nap on the couch.",
+        "The weather is sunny today.",
+        "It is a beautiful sunny day.",
+        "Python is a popular programming language.",
+        "Python is widely used for software development.",
+        "I like eating apples.",
+        "I enjoy eating apples.",
+        "The football match starts at eight."
+    ],
+    "expected_duplicates": [
+        "The cat is sleeping on the sofa.",
+        "A cat is taking a nap on the couch.",
+        "It is a beautiful sunny day.",
+        "I enjoy eating apples."
+    ],
+    "results": [
+        {
+            "threshold": 0.68,
+            "original_count": 10,
+            "selected_count": 5,
+            "filtered_count": 5,
+            "TP": 4,
+            "FP": 1,
+            "FN": 0,
+            "precision": 0.8,
+            "recall": 1.0,
+            "f1_score": 0.888888888888889
+        },
+        {
+            "threshold": 0.7,
+            "original_count": 10,
+            "selected_count": 5,
+            "filtered_count": 5,
+            "TP": 4,
+            "FP": 1,
+            "FN": 0,
+            "precision": 0.8,
+            "recall": 1.0,
+            "f1_score": 0.888888888888889
+        },
+        {
+            "threshold": 0.72,
+            "original_count": 10,
+            "selected_count": 6,
+            "filtered_count": 4,
+            "TP": 3,
+            "FP": 1,
+            "FN": 1,
+            "precision": 0.75,
+            "recall": 0.75,
+            "f1_score": 0.75
+        },
+        {
+            "threshold": 0.74,
+            "original_count": 10,
+            "selected_count": 7,
+            "filtered_count": 3,
+            "TP": 3,
+            "FP": 0,
+            "FN": 1,
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1_score": 0.8571428571428571
+        },
+        {
+            "threshold": 0.75,
+            "original_count": 10,
+            "selected_count": 7,
+            "filtered_count": 3,
+            "TP": 3,
+            "FP": 0,
+            "FN": 1,
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1_score": 0.8571428571428571
+        },
+        {
+            "threshold": 0.76,
+            "original_count": 10,
+            "selected_count": 7,
+            "filtered_count": 3,
+            "TP": 3,
+            "FP": 0,
+            "FN": 1,
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1_score": 0.8571428571428571
+        },
+        {
+            "threshold": 0.78,
+            "original_count": 10,
+            "selected_count": 8,
+            "filtered_count": 2,
+            "TP": 2,
+            "FP": 0,
+            "FN": 2,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1_score": 0.6666666666666666
+        },
+        {
+            "threshold": 0.8,
+            "original_count": 10,
+            "selected_count": 8,
+            "filtered_count": 2,
+            "TP": 2,
+            "FP": 0,
+            "FN": 2,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1_score": 0.6666666666666666
+        },
+        {
+            "threshold": 0.82,
+            "original_count": 10,
+            "selected_count": 8,
+            "filtered_count": 2,
+            "TP": 2,
+            "FP": 0,
+            "FN": 2,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1_score": 0.6666666666666666
+        },
+        {
+            "threshold": 0.84,
+            "original_count": 10,
+            "selected_count": 8,
+            "filtered_count": 2,
+            "TP": 2,
+            "FP": 0,
+            "FN": 2,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1_score": 0.6666666666666666
+        }
+    ]
+}
