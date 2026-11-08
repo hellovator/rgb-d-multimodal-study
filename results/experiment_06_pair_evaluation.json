@@ -1,0 +1,45 @@
+{
+    "experiment": "Experiment 06 Pair-level Evaluation",
+    "semhash_version": "0.5.0",
+    "model_name": "None",
+    "embedding_dimension": 256,
+    "normalization": true,
+    "total_pairs": 100,
+    "positive_pairs": 40,
+    "negative_pairs": 60,
+    "similarity_statistics": {
+        "min": -0.13017882406711578,
+        "max": 1.0,
+        "mean": 0.6558786034584045,
+        "std": 0.3565467596054077
+    },
+    "exploratory_best_single_threshold": {
+        "threshold": 0.5,
+        "precision": 0.5064935064935064,
+        "recall": 0.975,
+        "f1": 0.6666666666666666
+    },
+    "double_threshold": {
+        "low_threshold": 0.7,
+        "high_threshold": 0.85,
+        "total_pairs": 100,
+        "auto_filter_count": 36,
+        "auto_keep_count": 34,
+        "manual_review_count": 30,
+        "automatic_decision_coverage": 0.7,
+        "manual_review_rate": 0.3,
+        "automatic_decision_metrics": {
+            "TP": 22,
+            "FP": 14,
+            "FN": 9,
+            "TN": 25,
+            "Precision": 0.6111111111111112,
+            "Recall": 0.7096774193548387,
+            "F1": 0.6567164179104478,
+            "Accuracy": 0.6714285714285714
+        },
+        "auto_filter_precision": 0.6111111111111112,
+        "auto_filter_recall": 0.55
+    },
+    "note": "Full-dataset exploratory analysis only. Do not report these results as independent test performance. Threshold selection requires a separate calibration/test split."
+}
