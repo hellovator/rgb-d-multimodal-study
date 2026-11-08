@@ -1,0 +1,104 @@
+
+pair_id,text_a,text_b,gold_label,category,annotator,notes
+P001,The cat is sleeping on the sofa.,The cat is sleeping on the sofa.,1,exact_duplicate,student,完全相同
+P002,The weather is sunny today.,The weather is sunny today.,1,exact_duplicate,student,完全相同
+P003,Python is a programming language.,Python is a programming language.,1,exact_duplicate,student,完全相同
+P004,I enjoy reading books.,I enjoy reading books.,1,exact_duplicate,student,完全相同
+P005,The meeting starts at nine.,The meeting starts at nine.,1,exact_duplicate,student,完全相同
+P006,The cat is sleeping on the sofa.,A cat is taking a nap on the couch.,1,paraphrase,student,同义改写
+P007,It is raining heavily.,There is heavy rain outside.,1,paraphrase,student,表达相同天气信息
+P008,She purchased a new car.,She bought a new automobile.,1,paraphrase,student,同义改写
+P009,The child is very happy.,The kid feels extremely joyful.,1,paraphrase,student,同义改写
+P010,He began studying at eight.,He started his studies at 8 AM.,1,paraphrase,student,时间表达基本相同
+P011,Python is popular for data science.,Python is popular for web development.,0,similar_topic,student,应用领域不同
+P012,The weather is sunny today.,The weather will be rainy tomorrow.,0,similar_topic,student,天气状况和日期不同
+P013,The cat is sleeping on the sofa.,The cat is eating food in the kitchen.,0,similar_topic,student,行为和地点不同
+P014,The football match starts at eight.,The football match ends at ten.,0,similar_topic,student,事件时间信息不同
+P015,The student studies mathematics.,The student studies computer science.,0,similar_topic,student,学科信息不同
+P016,The company released a new phone.,The company released a new phone with a better camera.,0,partial_overlap,student,第二句包含额外独立信息
+P017,The boy plays football.,The boy plays football and basketball.,0,partial_overlap,student,第二句增加运动项目
+P018,The meeting is on Monday.,The meeting is on Monday at 3 PM in Room 201.,0,partial_overlap,student,第二句增加时间和地点信息
+P019,The car is red.,The red car belongs to my neighbor.,0,partial_overlap,student,第二句增加所有权信息
+P020,The dog is running.,The dog is running quickly across the park.,0,partial_overlap,student,第二句增加速度和地点信息
+P021,The ocean is deep.,My favorite food is pizza.,0,unrelated,student,内容无关
+P022,The computer is turned on.,Birds are flying over the lake.,0,unrelated,student,内容无关
+P023,She likes music.,The building has five floors.,0,unrelated,student,内容无关
+P024,The train arrived late.,I bought a new notebook.,0,unrelated,student,内容无关
+P025,The baby is sleeping.,The restaurant serves Italian food.,0,unrelated,student,内容无关
+
+P026,The server is running.,The server is running.,1,exact_duplicate,student,完全重复
+P027,Water freezes at zero degrees Celsius.,Water freezes at zero degrees Celsius.,1,exact_duplicate,student,完全重复
+P028,The library closes at six PM.,The library closes at six PM.,1,exact_duplicate,student,完全重复
+P029,The package arrived yesterday.,The package arrived yesterday.,1,exact_duplicate,student,完全重复
+P030,The meeting was canceled.,The meeting was canceled.,1,exact_duplicate,student,完全重复
+P031,The train is delayed.,The train is running late.,1,paraphrase,student,表达相同的延误信息
+P032,He is very tired.,He feels extremely exhausted.,1,paraphrase,student,表达相同的疲惫状态
+P033,The shop is closed today.,The store is not open today.,1,paraphrase,student,表达相同的营业状态
+P034,She answered the question quickly.,She responded to the question rapidly.,1,paraphrase,student,表达相同的回答行为
+P035,The room is very cold.,The room has a low temperature.,1,paraphrase,student,表达相同的温度状态
+P036,The doctor works at a hospital.,The nurse works at a hospital.,0,similar_topic,student,职业不同
+P037,The laptop has 16 GB of memory.,The laptop has 512 GB of storage.,0,similar_topic,student,硬件参数不同
+P038,The movie was released in 2020.,The movie was released in 2022.,0,similar_topic,student,年份不同
+P039,The company employs 100 people.,The company employs 200 people.,0,similar_topic,student,人数不同
+P040,The bus travels to the airport.,The train travels to the airport.,0,similar_topic,student,交通工具不同
+P041,The student passed the exam.,The student passed the exam with the highest score.,0,partial_overlap,student,第二句增加成绩信息
+P042,The shop sells fresh fruit.,The shop sells fresh fruit and vegetables.,0,partial_overlap,student,第二句增加商品种类
+P043,The woman works in a bank.,The woman works in a bank near the city center.,0,partial_overlap,student,第二句增加地点信息
+P044,The package contains a book.,The package contains a book and a notebook.,0,partial_overlap,student,第二句增加物品
+P045,The meeting starts at noon.,The meeting starts at noon and lasts two hours.,0,partial_overlap,student,第二句增加持续时间
+P046,The mountain is covered with snow.,The musician plays the piano beautifully.,0,unrelated,student,内容无关
+P047,The printer needs new ink.,The garden has many colorful flowers.,0,unrelated,student,内容无关
+P048,The airplane landed safely.,The recipe requires two eggs.,0,unrelated,student,内容无关
+P049,The museum opens on Tuesday.,My brother enjoys playing chess.,0,unrelated,student,内容无关
+P050,The river flows through the valley.,The phone battery is almost empty.,0,unrelated,student,内容无关
+
+P051,The database backup completed successfully.,The database backup completed successfully.,1,exact_duplicate,student,完全重复
+P052,The coffee machine is broken.,The coffee machine is broken.,1,exact_duplicate,student,完全重复
+P053,The classroom is empty.,The classroom is empty.,1,exact_duplicate,student,完全重复
+P054,The flight departs at seven.,The flight departs at seven.,1,exact_duplicate,student,完全重复
+P055,The website is temporarily unavailable.,The website is temporarily unavailable.,1,exact_duplicate,student,完全重复
+P056,The package was delivered this morning.,The parcel arrived this morning.,1,paraphrase,student,表达相同的送达信息
+P057,He repaired the damaged bicycle.,He fixed the broken bike.,1,paraphrase,student,表达相同的维修行为
+P058,The baby is crying loudly.,The infant is making loud cries.,1,paraphrase,student,表达相同的状态
+P059,They postponed the meeting.,They delayed the meeting until later.,1,paraphrase,student,表达相同的延期信息
+P060,She is learning to play the guitar.,She is studying how to play the guitar.,1,paraphrase,student,表达相同的学习活动
+P061,The chef prepared dinner.,The waiter served dinner.,0,similar_topic,student,工作角色和行为不同
+P062,The smartphone supports wireless charging.,The smartphone supports fast charging.,0,similar_topic,student,功能特性不同
+P063,The research was published in a journal.,The research was presented at a conference.,0,similar_topic,student,发表形式不同
+P064,The building has twelve floors.,The building has twelve rooms.,0,similar_topic,student,建筑属性不同
+P065,The student received a scholarship.,The student applied for a scholarship.,0,similar_topic,student,获得与申请不是同一事实
+P066,The dog is sleeping in the garden.,The dog is sleeping in the garden beside a tree.,0,partial_overlap,student,第二句增加具体位置
+P067,The teacher explained the lesson.,The teacher explained the lesson using several examples.,0,partial_overlap,student,第二句增加教学方式
+P068,The restaurant serves breakfast.,The restaurant serves breakfast from seven to ten.,0,partial_overlap,student,第二句增加供应时间
+P069,The software supports image editing.,The software supports image editing and video editing.,0,partial_overlap,student,第二句增加功能
+P070,The car was parked outside.,The car was parked outside the main entrance.,0,partial_overlap,student,第二句增加具体地点
+P071,The volcano erupted last night.,The accountant checked the annual budget.,0,unrelated,student,内容无关
+P072,The child drew a picture.,The refrigerator needs to be cleaned.,0,unrelated,student,内容无关
+P073,The football team won the final.,The soup contains fresh mushrooms.,0,unrelated,student,内容无关
+P074,The moon is visible tonight.,The mechanic replaced the engine.,0,unrelated,student,内容无关
+P075,The museum displays ancient pottery.,The computer requires a software update.,0,unrelated,student,内容无关
+P076,The office opens at eight in the morning.,The office opens at eight in the morning.,1,exact_duplicate,student,完全重复
+P077,The password was changed yesterday.,The password was changed yesterday.,1,exact_duplicate,student,完全重复
+P078,The children are playing outside.,The children are playing outside.,1,exact_duplicate,student,完全重复
+P079,The report contains five chapters.,The report contains five chapters.,1,exact_duplicate,student,完全重复
+P080,The electricity was restored.,The electricity was restored.,1,exact_duplicate,student,完全重复
+P081,The customer requested a refund.,The customer asked for their money back.,1,paraphrase,student,表达相同的退款请求
+P082,The road is blocked by snow.,Snow has made the road impassable.,1,paraphrase,student,表达相同的道路状况
+P083,He lives close to the university.,He resides near the university.,1,paraphrase,student,表达相同的居住位置
+P084,The machine stopped working.,The machine ceased to operate.,1,paraphrase,student,表达相同的故障状态
+P085,They reached an agreement.,They came to an agreement.,1,paraphrase,student,表达相同的结果
+P086,The library has a large collection of novels.,The library has a large collection of history books.,0,similar_topic,student,藏书类型不同
+P087,The scientist studies ocean pollution.,The scientist studies air pollution.,0,similar_topic,student,研究对象不同
+P088,The shop is located on King Street.,The shop is located on Queen Street.,0,similar_topic,student,地址不同
+P089,The conference begins on Friday.,The conference begins on Saturday.,0,similar_topic,student,日期不同
+P090,The battery lasts for ten hours.,The battery takes ten hours to charge.,0,similar_topic,student,续航时间与充电时间不同
+P091,The gardener planted roses.,The gardener planted roses and tulips.,0,partial_overlap,student,第二句增加花卉种类
+P092,The student submitted the assignment.,The student submitted the assignment before the deadline.,0,partial_overlap,student,第二句增加提交时间信息
+P093,The hotel offers free breakfast.,The hotel offers free breakfast and airport transportation.,0,partial_overlap,student,第二句增加服务项目
+P094,The engineer designed a bridge.,The engineer designed a bridge across the river.,0,partial_overlap,student,第二句增加桥梁位置
+P095,The box contains three bottles.,The box contains three bottles of olive oil.,0,partial_overlap,student,第二句增加物品具体类型
+P096,The telescope is pointed at Mars.,The baker decorated a birthday cake.,0,unrelated,student,内容无关
+P097,The printer is out of paper.,The forest is home to many deer.,0,unrelated,student,内容无关
+P098,The concert attracted thousands of fans.,The washing machine finished its cycle.,0,unrelated,student,内容无关
+P099,The farmer harvested the wheat.,The lawyer reviewed the contract.,0,unrelated,student,内容无关
+P100,The spacecraft entered orbit.,The chef sharpened a kitchen knife.,0,unrelated,student,内容无关
