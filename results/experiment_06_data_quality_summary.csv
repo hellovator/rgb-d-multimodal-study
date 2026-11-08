@@ -1,0 +1,6 @@
+﻿category,gold_label,count
+exact_duplicate,1,20
+paraphrase,1,20
+partial_overlap,0,20
+similar_topic,0,20
+unrelated,0,20

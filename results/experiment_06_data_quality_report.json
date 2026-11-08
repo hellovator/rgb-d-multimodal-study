@@ -1,0 +1,26 @@
+{
+    "checks": {
+        "total_samples": 100,
+        "missing_values": 0,
+        "duplicate_ids": 0,
+        "empty_texts": 0,
+        "invalid_labels": 0,
+        "category_count": 5,
+        "missing_categories": [],
+        "unexpected_categories": [],
+        "duplicate_text_pairs": 0,
+        "category_label_conflicts": 0
+    },
+    "category_distribution": {
+        "exact_duplicate": 20,
+        "paraphrase": 20,
+        "similar_topic": 20,
+        "partial_overlap": 20,
+        "unrelated": 20
+    },
+    "label_distribution": {
+        "0": 60,
+        "1": 40
+    },
+    "conflict_pair_ids": []
+}
