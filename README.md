@@ -1,197 +1,148 @@
 # RGB-D Multimodal Study
 
-**A Research-Oriented Study of Multimodal Learning and Semantic Deduplication**
+**A Research-Oriented Study of Semantic Deduplication and RGB-D Multimodal Learning**
 
 ## 1. Project Overview
 
-This repository records an undergraduate research project focused on multimodal learning, semantic text deduplication, and deep learning techniques.
+This repository records an undergraduate research project focused on semantic text deduplication and RGB-D multimodal learning.
 
-At the current stage, the project uses **SemHash** as an entry point to explore semantic deduplication. Through source-code analysis, experimental reproduction, and comparative experiments, the project investigates text embeddings, semantic similarity, similarity thresholds, and deduplication strategies.
+The initial stage uses SemHash as an entry point to understand semantic similarity, text embeddings, threshold-based deduplication, and evaluation strategies.
 
-The longer-term research direction is to explore RGB-D multimodal learning and semantic segmentation, including the study of DFormer.
+The project subsequently explores RGB-D semantic segmentation through the study of DFormer.
 
-## 2. Research Objectives
-
-- Understand the basic principles of semantic text deduplication.
-- Study text embedding and semantic similarity computation.
-- Analyze the influence of similarity thresholds on deduplication performance.
-- Evaluate deduplication using Precision, Recall, and F1-score.
-- Explore a dual-threshold strategy combining automatic filtering and manual review.
-- Build a foundation for subsequent multimodal learning research.
-
-## 3. Experimental Environment
+## 2. Experimental Environment
 
 | Component | Configuration |
 |---|---|
 | Operating System | Windows |
 | Python | 3.10 |
 | Environment Management | Conda |
-| Semantic Deduplication Framework | SemHash 0.5.0 |
+| Semantic Deduplication Framework | SemHash |
 | Memory | 16 GB |
 | GPU | No NVIDIA discrete GPU |
 
-## 4. Experiments
+## 3. SemHash Experiments
 
 ### Experiment 1: Basic Semantic Deduplication
 
-**Objective:** Understand the basic workflow of SemHash and verify that semantic duplicate texts can be identified.
-
-The experiment uses a small collection of English sentences containing exact duplicates and semantically similar expressions.
+Reproduced the basic SemHash workflow and explored semantic duplicate identification.
 
 ### Experiment 2: Similarity Threshold Analysis
 
-**Objective:** Investigate how different similarity thresholds influence the deduplication process.
+Investigated how different similarity thresholds affect the number of retained and filtered texts.
 
-The tested thresholds include:
-
-`0.5, 0.6, 0.7, 0.8, 0.9, 0.95`
-
-The experiment records:
-- Original text count
-- Selected text count
-- Filtered text count
-- Duplicate ratio
-- Exact duplicate ratio
+Tested thresholds: `0.5, 0.6, 0.7, 0.8, 0.9, 0.95`.
 
 ### Experiment 3: Evaluation on a Manually Annotated Dataset
 
-**Objective:** Evaluate semantic deduplication performance using manually annotated duplicate texts.
+Evaluated semantic deduplication using Precision, Recall, and F1-score.
 
-Evaluation metrics:
+The experiments showed that lower thresholds generally improve recall, while higher thresholds improve precision.
 
-- **Precision:** The proportion of correctly identified duplicates among all predicted duplicates.
-- **Recall:** The proportion of actual duplicates successfully identified.
-- **F1-score:** The harmonic mean of Precision and Recall.
+### Experiment 4: Dual-Threshold Strategy
 
-Experimental results:
+Introduced two thresholds to divide candidate duplicates into:
 
-| Threshold | Precision | Recall | F1-score |
-|---|---:|---:|---:|
-| 0.5 | 0.8000 | 1.0000 | 0.8889 |
-| 0.6 | 0.8000 | 1.0000 | 0.8889 |
-| 0.7 | 0.8000 | 1.0000 | 0.8889 |
-| 0.8 | 1.0000 | 0.5000 | 0.6667 |
-| 0.9 | 1.0000 | 0.5000 | 0.6667 |
-| 0.95 | 1.0000 | 0.2500 | 0.4000 |
+- High-confidence duplicates for automatic filtering.
+- Medium-confidence candidates for manual review.
+- Other texts retained.
 
-**Observation:**
+This preliminary experiment explored a more cautious deduplication workflow.
 
-Lower thresholds identify more potential duplicates, resulting in higher recall but also some false positives. Higher thresholds improve precision but may miss semantically similar texts.
+### Experiment 5: Error Analysis and Evaluation
 
-In this small test dataset, thresholds of 0.5–0.7 achieved the highest F1-score.
+Extended the evaluation with additional error analysis and metric visualizations.
 
-### Experiment 4: Dual-Threshold Semantic Deduplication
+The experiment examined the relationship between threshold selection and false-positive and false-negative predictions.
 
-**Objective:** Introduce a dual-threshold strategy to divide candidate duplicates into different confidence levels.
+### Experiment 6: Data Quality Audit and Pair-Level Evaluation
 
-Experimental parameters:
+Conducted a more detailed evaluation using a manually annotated dataset of 100 text pairs.
 
-- Low threshold: 0.65
-- High threshold: 0.85
-
-The strategy divides the filtered texts into three categories:
-
-1. High-confidence duplicates: Automatically filtered.
-2. Medium-confidence duplicates: Sent for manual review.
-3. Other texts: Retained.
-
-Experimental results:
+At threshold 0.5, the results were:
 
 | Metric | Result |
 |---|---:|
-| Original texts | 10 |
-| Automatically filtered | 2 |
-| Manual review | 3 |
-| Temporarily retained | 8 |
-| True positives (automatic filtering) | 2 |
-| False positives | 0 |
-| False negatives | 2 |
-| Precision | 1.0000 |
-| Recall | 0.5000 |
-| F1-score | 0.6667 |
+| Correct predictions | 61 |
+| False positives | 38 |
+| False negatives | 1 |
+| Accuracy | 61.00% |
+| Precision | 50.65% |
+| Recall | 97.50% |
+| F1-score | 66.10% |
 
-**Observation:**
+The error analysis identified two important challenges:
 
-The dual-threshold strategy separates high-confidence candidates from uncertain candidates, reducing the risk of automatically deleting potentially useful texts.
+1. Partial-overlap texts may be incorrectly classified as duplicates.
+2. Texts with similar topics but different factual details may receive high similarity scores.
 
-The current experiment is preliminary and requires further validation on a larger dataset.
+These findings suggest that semantic similarity alone may not be sufficient for reliable deduplication.
 
-## 5. Experimental Visualizations
+The experiment also highlights the importance of data quality, annotation consistency, and threshold selection.
 
-The following figures summarize the experimental observations.
+**Note:** These results are preliminary and are based on a small manually constructed dataset. They should not be interpreted as general performance benchmarks.
 
-### 5.1 Threshold and Duplicate Ratio
-
-![Threshold Duplicate Ratio](results/01_threshold_duplicate_ratio.png)
-
-### 5.2 Evaluation Metrics
-
-![Evaluation Metrics](results/02_evaluation_metrics.png)
-
-### 5.3 Error Analysis
-
-![Error Analysis](results/03_error_analysis.png)
-
-## 6. Repository Structure
+## 4. Repository Structure
 
 ```text
 rgb-d-multimodal-study/
-│
+├── data/
+│   └── semhash_pair_dataset.csv
 ├── docs/
-│   └── Research notes and experiment documentation
-│
+│   ├── 02-module-notes/
+│   ├── 00-environment-setup.md
+│   ├── 03-reproduce.md
+│   ├── 04-experiment-log.md
+│   └── experiment_06_annotation.md
 ├── results/
-│   ├── experiment_02.csv
-│   ├── experiment_02.json
-│   ├── experiment_03.json
-│   ├── experiment_03_details.csv
-│   ├── experiment_03_summary.csv
-│   ├── experiment_04.json
-│   ├── experiment_04_details.csv
-│   ├── threshold_details.csv
-│   ├── threshold_experiments.json
-│   ├── threshold_summary.csv
-│   └── Experimental charts
-│
+│   ├── charts/
+│   ├── experiment_02.*
+│   ├── experiment_03.*
+│   ├── experiment_04.*
+│   ├── experiment_05_*
+│   └── experiment_06_*
 ├── semhash_demo.py
 ├── semhash_experiment_04.py
+├── semhash_experiment_06_audit.py
+├── semhash_experiment_06_error_analysis.py
+├── semhash_experiment_06_pair_evaluation.py
 ├── semhash_plot.py
-├── README.md
-└── 本科生多模态科研路线图.png
+└── README.md
 ```
 
-## 7. Current Research Progress
+## 5. Current Research Progress
 
 - [x] Configure Python and Conda environments.
 - [x] Install and run SemHash.
-- [x] Complete basic semantic deduplication.
+- [x] Reproduce basic semantic deduplication.
 - [x] Conduct similarity threshold experiments.
-- [x] Evaluate results using a manually annotated dataset.
 - [x] Implement a preliminary dual-threshold strategy.
-- [x] Generate experimental charts.
-- [x] Organize experimental data and upload it to GitHub.
-- [ ] Improve the evaluation dataset and experimental methodology.
-- [ ] Explore improved semantic deduplication strategies.
-- [ ] Study DFormer and RGB-D multimodal semantic segmentation.
+- [x] Perform error analysis and metric evaluation.
+- [x] Conduct data quality auditing and pair-level evaluation.
+- [x] Organize experimental code, data, documentation, and visualizations.
+- [x] Upload initial experimental results to GitHub.
+- [ ] Expand the evaluation dataset.
+- [ ] Investigate improved semantic deduplication strategies.
+- [ ] Continue studying DFormer and RGB-D semantic segmentation.
 
-## 8. Future Research Directions
+## 6. Future Research Directions
 
-Future work will focus on the following aspects:
+1. Expand the manually annotated evaluation dataset.
+2. Investigate adaptive similarity thresholds.
+3. Explore methods for identifying factual conflicts and partial information overlap.
+4. Compare different embedding models and deduplication strategies.
+5. Study RGB-D multimodal representation learning and semantic segmentation using DFormer.
 
-1. **Dataset Expansion:** Build a larger and more diverse manually annotated dataset.
-2. **Threshold Optimization:** Investigate adaptive threshold selection instead of relying on fixed thresholds.
-3. **Deduplication Strategy Improvement:** Explore more reliable methods for combining semantic similarity and manual review.
-4. **Comparative Experiments:** Compare different embedding models and deduplication strategies.
-5. **Multimodal Learning:** Gradually extend the research toward RGB-D multimodal semantic segmentation and DFormer.
+## 7. Notes
 
-## 9. Notes
+This repository documents an ongoing undergraduate research project.
 
-This repository is an ongoing undergraduate research project. The current SemHash experiments are preliminary explorations conducted on a small manually constructed dataset. The reported results should not be interpreted as general performance benchmarks.
+The SemHash experiments are preliminary explorations intended to develop practical skills in source-code analysis, experimental reproduction, quantitative evaluation, and error analysis.
 
-The purpose of this project is to develop practical research skills through source-code analysis, experimental reproduction, quantitative evaluation, and iterative improvement.
+The later research stage focuses on understanding RGB-D multimodal semantic segmentation and exploring potential improvements based on existing research.
 
 ---
 
-**Project Status:** Early-stage research and experimental exploration.
+**Project Status:** Ongoing research and experimental exploration.
 
-**Main Focus:** SemHash Semantic Deduplication → Improved Deduplication Strategies → RGB-D Multimodal Learning.
+**Research Path:** SemHash Semantic Deduplication → Error Analysis and Evaluation → RGB-D Multimodal Learning.
